@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="site-root" content="./">
+
+    <title>Daily Devotion | Fountain of Life Christian Church</title>
+
+    <meta name="description"
+          content="Explore monthly Bible reading plans and downloadable devotional PDF resources from Fountain of Life Christian Church.">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- SHARED HEADER -->
+    <div id="site-header"></div>
+
+    <main>
+
+        <!-- ==========================================
+             PAGE HEADER
+        ========================================== -->
+        <section class="page-header">
+
+            <div class="wrap">
+
+                <span class="eyebrow">
+                    Fountain of Life Christian Church
+                </span>
+
+                <h1>Daily Devotion</h1>
+
+                <p>
+                    Grow in God's Word through daily Bible
+                    reading, prayer, and reflection.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             MONTHLY BIBLE READING PLANS
+        ========================================== -->
+        <section class="section">
+
+            <div class="wrap">
+
+                <div class="devotion-heading">
+
+                    <span class="eyebrow">
+                        Daily Bible Reading
+                    </span>
+
+                    <h2>Monthly Bible Reading Plan</h2>
+
+                    <p>
+                        Select a month to view the Bible
+                        reading schedule. You can read the
+                        PDF directly or download it for
+                        personal use.
+                    </p>
+
+                </div>
+
+
+                <!-- MONTH SELECTOR -->
+                <div class="devotion-month-selector"
+                     aria-label="Select a Bible reading month">
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="1">January</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="2">February</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="3">March</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="4">April</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="5">May</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="6">June</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="7">July</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="8">August</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="9">September</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="10">October</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="11">November</button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="12">December</button>
+
+                </div>
+
+
+                <!-- PDF VIEWER -->
+                <div class="devotion-viewer">
+
+                    <!-- Viewer header -->
+                    <div class="devotion-viewer-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                Bible Reading Schedule
+                            </span>
+
+                            <h3 id="devotion-month-title">
+                                Monthly Bible Reading Plan
+                            </h3>
+
+                            <p id="devotion-month-description"
+                               aria-live="polite">
+                                Loading the current month's schedule...
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="devotion-current-label"
+                            id="devotion-current-label"
+                            hidden>
+                            Current Month
+                        </span>
+
+                    </div>
+
+
+                    <!-- Embedded PDF -->
+                    <div class="devotion-pdf-container"
+                         id="devotion-pdf-container">
+
+                        <iframe
+                            id="devotion-pdf"
+                            title="Monthly Bible Reading Plan PDF"
+                            loading="lazy">
+                        </iframe>
+
+                    </div>
+
+                    <!-- Missing PDF message -->
+                    <div class="devotion-pdf-unavailable"
+                         id="devotion-pdf-unavailable"
+                         role="status"
+                         hidden>
+
+                        <h3>PDF Not Available Yet</h3>
+
+                        <p>
+                            The Bible reading schedule
+                            for this month has not been
+                            uploaded yet.
+                        </p>
+
+                    </div>
+
+
+                    <!-- PDF actions -->
+                    <div class="devotion-pdf-actions"
+                         id="devotion-pdf-actions">
+
+                        <a
+                            id="devotion-download"
+                            class="btn"
+                            href="#"
+                            download>
+                            Download PDF ↓
+                        </a>
+
+                        <a
+                            id="devotion-fullscreen"
+                            class="btn btn-outline-dark"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Open PDF in New Tab ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             DEVOTIONAL ENCOURAGEMENT
+        ========================================== -->
+        <section class="section soft">
+
+            <div class="wrap prose reading-section">
+
+                <span class="eyebrow">
+                    Growing in God's Word
+                </span>
+
+                <h2>Make Time for Daily Devotion</h2>
+
+                <p>
+                    Spending time reading the Bible,
+                    reflecting on God's Word, and praying
+                    helps us grow in our relationship
+                    with Him.
+                </p>
+
+                <p>
+                    We encourage you to set aside time
+                    each day to read Scripture and
+                    reflect on what God is teaching you.
+                </p>
+
+                <div class="fact">
+
+                    <p>
+                        "Your word is a lamp for my feet,
+                        a light on my path."
+                    </p>
+
+                    <strong>Psalm 119:105</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <div id="site-footer"></div>
+
+    <!-- SHARED JAVASCRIPT -->
+    <script src="./js/main.js" defer></script>
+
+</body>
+</html>

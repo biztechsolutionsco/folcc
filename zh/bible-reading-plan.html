@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="site-root" content="../">
+
+    <title>每日讀經進度表 | 生命泉靈糧教會</title>
+
+    <meta name="description"
+          content="生命泉靈糧教會每日讀經進度表。按月份查看、線上閱讀或下載繁體中文聖經讀經計畫，與我們一同建立每日親近神的習慣。">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- SHARED HEADER -->
+    <div id="site-header"></div>
+
+    <main>
+
+        <!-- ==========================================
+             PAGE HEADER
+        ========================================== -->
+        <section class="page-header">
+
+            <div class="wrap">
+
+                <span class="eyebrow">
+                    每日靈修
+                </span>
+
+                <h1>每日讀經進度表</h1>
+
+                <p>
+                    神的話語是我們腳前的燈、路上的光。
+                    透過每日閱讀聖經，
+                    讓我們更深認識神、明白祂的心意，
+                    並在祂的真理與恩典中不斷成長。
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             MONTHLY BIBLE READING PLANS
+        ========================================== -->
+        <section class="section">
+
+            <div class="wrap">
+
+                <div class="devotion-heading">
+
+                    <span class="eyebrow">
+                        全年讀經計畫
+                    </span>
+
+                    <h2>選擇月份</h2>
+
+                    <p>
+                        您可以選擇任何月份查看讀經進度。
+                        網頁會自動顯示當月的讀經計畫，
+                        也可以下載 PDF，方便列印或離線閱讀。
+                    </p>
+
+                </div>
+
+
+                <!-- ==================================
+                     TWELVE MONTH BUTTONS
+                ================================== -->
+                <div class="devotion-month-selector"
+                     role="group"
+                     aria-label="選擇讀經月份">
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="1"
+                            aria-pressed="false">
+                        一月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="2"
+                            aria-pressed="false">
+                        二月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="3"
+                            aria-pressed="false">
+                        三月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="4"
+                            aria-pressed="false">
+                        四月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="5"
+                            aria-pressed="false">
+                        五月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="6"
+                            aria-pressed="false">
+                        六月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="7"
+                            aria-pressed="false">
+                        七月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="8"
+                            aria-pressed="false">
+                        八月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="9"
+                            aria-pressed="false">
+                        九月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="10"
+                            aria-pressed="false">
+                        十月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="11"
+                            aria-pressed="false">
+                        十一月
+                    </button>
+
+                    <button type="button"
+                            class="devotion-month"
+                            data-month="12"
+                            aria-pressed="false">
+                        十二月
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     PDF VIEWER
+                ================================== -->
+                <div class="devotion-viewer">
+
+                    <!-- VIEWER HEADER -->
+                    <div class="devotion-viewer-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                每月讀經計畫
+                            </span>
+
+                            <h3 id="devotion-month-title">
+                                讀經進度表
+                            </h3>
+
+                            <p id="devotion-month-description">
+                                選擇月份以查看讀經進度表。
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="devotion-current-label"
+                            id="devotion-current-label"
+                            hidden>
+                            本月
+                        </span>
+
+                    </div>
+
+
+                    <!-- PDF DISPLAY -->
+                    <div class="devotion-pdf-container"
+                         id="devotion-pdf-container">
+
+                        <iframe
+                            id="devotion-pdf"
+                            title="每日讀經進度表 PDF"
+                            loading="eager">
+                        </iframe>
+
+                    </div>
+
+
+                    <!-- MISSING PDF MESSAGE -->
+                    <div class="devotion-pdf-unavailable"
+                         id="devotion-pdf-unavailable"
+                         hidden>
+
+                        <h3>讀經進度表暫未提供</h3>
+
+                        <p>
+                            此月份的讀經進度表目前無法顯示。
+                            請稍後再試，或選擇其他月份。
+                        </p>
+
+                    </div>
+
+
+                    <!-- PDF ACTIONS -->
+                    <div class="devotion-pdf-actions"
+                         id="devotion-pdf-actions"
+                         hidden>
+
+                        <a
+                            class="btn"
+                            id="devotion-download"
+                            href="#"
+                            download>
+                            下載 PDF ↓
+                        </a>
+
+                        <a
+                            class="btn btn-outline-dark"
+                            id="devotion-fullscreen"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            在新分頁開啟 PDF ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             CONTINUE YOUR STUDY
+        ========================================== -->
+        <section class="section soft">
+
+            <div class="wrap">
+
+                <div class="resource-library-heading">
+
+                    <span class="eyebrow">
+                        更多靈修資源
+                    </span>
+
+                    <h2>繼續探索神的話語</h2>
+
+                    <p>
+                        除了每天閱讀聖經，
+                        您也可以透過聖經參考資料及教學影片，
+                        更深入了解各卷書的背景、內容與信息。
+                    </p>
+
+                </div>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <h3>聖經參考資料</h3>
+
+                        <p>
+                            閱讀聖經各卷書的介紹、
+                            背景資訊及研讀資源，
+                            幫助您更深入理解神的話語。
+                        </p>
+
+                        <a href="./bible-resources.html">
+                            瀏覽參考資料 →
+                        </a>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>聖經教學影片</h3>
+
+                        <p>
+                            透過聖經教學影片，
+                            了解舊約與新約各卷書的背景、
+                            主題及重要信息。
+                        </p>
+
+                        <a href="./bible-videos.html">
+                            觀看教學影片 →
+                        </a>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>與我們一同敬拜</h3>
+
+                        <p>
+                            歡迎參加生命泉靈糧教會的週六崇拜，
+                            與弟兄姊妹一同敬拜、
+                            禱告並學習神的話語。
+                        </p>
+
+                        <a href="./services.html">
+                            了解崇拜聚會 →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SHARED FOOTER -->
+    <div id="site-footer"></div>
+
+    <!-- SHARED JAVASCRIPT -->
+    <script src="../js/main.js" defer></script>
+
+</body>
+</html>

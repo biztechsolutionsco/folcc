@@ -1,0 +1,162 @@
+
+<!-- ==========================================
+     FOLCC SHARED HEADER
+========================================== -->
+
+<header class="site-header">
+
+    <div class="wrap nav-wrap">
+
+        <!-- CHURCH LOGO -->
+        <a
+            href="/"
+            class="brand"
+            data-home
+            aria-label="Fountain of Life Christian Church Home"
+        >
+            <img
+                src="/images/logo.png"
+                alt="Fountain of Life Christian Church"
+                class="site-logo"
+            >
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+            id="menu-toggle"
+            class="menu-button"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="nav-links"
+        >
+            ☰
+        </button>
+
+        <!-- MAIN NAVIGATION -->
+        <nav
+            class="nav-links"
+            id="nav-links"
+            aria-label="Main navigation"
+        >
+
+            <!-- HOME -->
+            <a href="/index.html"
+               data-route="index.html"
+               data-i18n="home">
+                Home
+            </a>
+
+            <!-- ABOUT DROPDOWN -->
+            <details class="nav-dropdown">
+
+                <summary class="nav-dropdown-toggle">
+                    <span data-i18n="about">About</span>
+                    <span class="dropdown-arrow"
+                          aria-hidden="true"></span>
+                </summary>
+
+                <div class="nav-dropdown-menu">
+
+                    <a href="/about.html"
+                       data-route="about.html">
+                        <span data-i18n="aboutChurch">
+                            About Our Church
+                        </span>
+                    </a>
+
+                    <a href="/core-values.html"
+                       data-route="core-values.html"
+                       data-i18n="coreValues">
+                        Core Values
+                    </a>
+
+                    <a href="/ministry-team.html"
+                       data-route="ministry-team.html"
+                       data-i18n="ministryTeam">
+                        Ministry Team
+                    </a>
+
+                </div>
+
+            </details>
+
+            <!-- NEW HERE -->
+            <a href="/new-here.html"
+               data-route="new-here.html"
+               data-i18n="new">
+                New Here?
+            </a>
+
+            <!-- WORSHIP -->
+            <a href="/services.html"
+               data-route="services.html"
+               data-i18n="services">
+                Worship
+            </a>
+
+            <!-- DEVOTION DROPDOWN -->
+            <details class="nav-dropdown">
+
+                <summary class="nav-dropdown-toggle">
+                    <span data-i18n="devotion">Devotion</span>
+                    <span class="dropdown-arrow"
+                          aria-hidden="true"></span>
+                </summary>
+
+                <div class="nav-dropdown-menu">
+
+                    <a href="/bible-reading-plan.html"
+                       data-route="bible-reading-plan.html"
+                       data-i18n="bibleReadingPlan">
+                        Bible Reading Plan
+                    </a>
+
+                    <a href="/bible-resources.html"
+                       data-route="bible-resources.html"
+                       data-i18n="bibleResources">
+                        Bible Reference Materials
+                    </a>
+
+                    <a href="/bible-videos.html"
+                       data-route="bible-videos.html"
+                       data-i18n="bibleVideos">
+                        Bible Teaching Videos
+                    </a>
+
+                </div>
+
+            </details>
+
+            <!-- CONTACT -->
+            <a href="/contact.html"
+               data-route="contact.html"
+               data-i18n="contact">
+                Contact
+            </a>
+
+            <!-- LANGUAGE SWITCHER -->
+            <a
+                href="/zh/index.html"
+                id="language-switch"
+                class="language"
+            >
+                中文
+            </a>
+
+            <!-- DONATE -->
+            <a
+                href="https://give.folcc.ca/"
+                class="donate"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="donate"
+            >
+                Donate
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>

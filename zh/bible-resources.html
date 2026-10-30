@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="site-root" content="../">
+
+    <title>聖經參考資料 | 生命泉靈糧教會</title>
+
+    <meta name="description"
+          content="瀏覽生命泉靈糧教會的聖經參考資料，包括舊約與新約各卷書的介紹、背景資訊及研讀資源，幫助您更深入認識神的話語。">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         SHARED HEADER
+    ========================================== -->
+    <div id="site-header"></div>
+
+    <main>
+
+        <!-- ==========================================
+             PAGE HEADER
+        ========================================== -->
+        <section class="page-header">
+
+            <div class="wrap">
+
+                <span class="eyebrow">
+                    每日靈修
+                </span>
+
+                <h1>聖經參考資料</h1>
+
+                <p>
+                    透過聖經各卷書的介紹、歷史背景
+                    及研讀資源，更深入了解神的話語，
+                    並將聖經的真理應用在每日生活中。
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             REFERENCE LIBRARY
+        ========================================== -->
+        <section class="section">
+
+            <div class="wrap">
+
+                <div class="resource-library-heading">
+
+                    <span class="eyebrow">
+                        聖經研讀資源
+                    </span>
+
+                    <h2>探索聖經的豐富信息</h2>
+
+                    <p>
+                        您可以按照舊約或新約瀏覽參考資料，
+                        也可以搜尋特定的聖經書卷。
+                        點選資料卡即可閱讀原始文章
+                        或開啟 PDF 文件。
+                    </p>
+
+                </div>
+
+
+                <!-- SEARCH AND FILTERS -->
+                <div class="resource-toolbar">
+
+                    <div class="resource-search">
+
+                        <label for="resource-search-input">
+                            搜尋聖經參考資料
+                        </label>
+
+                        <input
+                            type="search"
+                            id="resource-search-input"
+                            placeholder="搜尋創世記、羅馬書、希伯來書..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                    <div class="resource-filters"
+                         role="group"
+                         aria-label="篩選聖經參考資料">
+
+                        <button
+                            type="button"
+                            class="resource-filter active"
+                            data-filter="all"
+                            aria-pressed="true">
+                            全部資料
+                        </button>
+
+                        <button
+                            type="button"
+                            class="resource-filter"
+                            data-filter="old"
+                            aria-pressed="false">
+                            舊約聖經
+                        </button>
+
+                        <button
+                            type="button"
+                            class="resource-filter"
+                            data-filter="new"
+                            aria-pressed="false">
+                            新約聖經
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESULTS -->
+                <div class="resource-results-heading">
+
+                    <h3 id="resource-results-title">
+                        全部參考資料
+                    </h3>
+
+                    <p id="resource-count"
+                       role="status"
+                       aria-live="polite">
+                        正在載入資料...
+                    </p>
+
+                </div>
+
+                <div
+                    class="resource-library-grid"
+                    id="bible-resource-grid">
+                </div>
+
+
+                <!-- NO RESULTS -->
+                <div
+                    class="resource-empty"
+                    id="resource-empty"
+                    hidden>
+
+                    <h3>找不到符合條件的資料</h3>
+
+                    <p>
+                        請嘗試搜尋其他聖經書卷，
+                        或選擇不同的分類。
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             CONTINUE YOUR STUDY
+        ========================================== -->
+        <section class="section soft">
+
+            <div class="wrap">
+
+                <div class="resource-library-heading">
+
+                    <span class="eyebrow">
+                        更多靈修資源
+                    </span>
+
+                    <h2>繼續在神的話語中成長</h2>
+
+                    <p>
+                        除了閱讀聖經參考資料，
+                        您也可以配合每日讀經進度表，
+                        或透過教學影片，
+                        更深入認識聖經的背景與信息。
+                    </p>
+
+                </div>
+
+
+                <div class="cards">
+
+                    <!-- READING PLAN -->
+                    <article class="card">
+
+                        <h3>每日讀經進度表</h3>
+
+                        <p>
+                            按照每月的讀經計畫，
+                            培養每日閱讀聖經、
+                            默想神話語的習慣。
+                        </p>
+
+                        <a href="./bible-reading-plan.html">
+                            查看讀經進度表 →
+                        </a>
+
+                    </article>
+
+
+                    <!-- VIDEO RESOURCES -->
+                    <article class="card">
+
+                        <h3>聖經教學影片</h3>
+
+                        <p>
+                            觀看舊約與新約的聖經教學，
+                            了解各卷書的歷史背景、
+                            內容及主要信息。
+                        </p>
+
+                        <a href="./bible-videos.html">
+                            觀看教學影片 →
+                        </a>
+
+                    </article>
+
+
+                    <!-- WORSHIP -->
+                    <article class="card">
+
+                        <h3>與我們一同敬拜</h3>
+
+                        <p>
+                            歡迎參加生命泉靈糧教會的
+                            週六崇拜，與弟兄姊妹
+                            一同敬拜並學習神的話語。
+                        </p>
+
+                        <a href="./services.html">
+                            了解崇拜聚會 →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SHARED FOOTER -->
+    <div id="site-footer"></div>
+
+    <!-- SHARED JAVASCRIPT -->
+    <script src="../js/main.js" defer></script>
+
+</body>
+</html>

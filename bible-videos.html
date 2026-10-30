@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="site-root" content="./">
+
+    <title>Bible Teaching Videos | Fountain of Life Christian Church</title>
+
+    <meta name="description"
+          content="Watch Bible teaching videos and explore Old and New Testament studies, including David Pawson's Unlocking the Bible series.">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- SHARED HEADER -->
+    <div id="site-header"></div>
+
+    <main>
+
+        <!-- ==========================================
+             PAGE HEADER
+        ========================================== -->
+        <section class="page-header">
+
+            <div class="wrap">
+
+                <span class="eyebrow">
+                    Daily Devotion
+                </span>
+
+                <h1>Bible Teaching Videos</h1>
+
+                <p>
+                    Explore the Scriptures through
+                    book-by-book Bible teaching
+                    and discover the historical
+                    context, meaning, and message
+                    of God's Word.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             VIDEO LIBRARY
+        ========================================== -->
+        <section class="section">
+
+            <div class="wrap">
+
+                <div class="resource-library-heading">
+
+                    <span class="eyebrow">
+                        Video Study Library
+                    </span>
+
+                    <h2>Explore the Bible</h2>
+
+                    <p>
+                        Browse our collection of Old and
+                        New Testament teaching videos.
+                        Search by Bible book or select
+                        a Testament to find a teaching.
+                    </p>
+
+                </div>
+
+
+                <!-- SEARCH AND FILTERS -->
+                <div class="resource-toolbar">
+
+                    <div class="resource-search">
+
+                        <label for="video-search-input">
+                            Search Bible Teaching Videos
+                        </label>
+
+                        <input
+                            type="search"
+                            id="video-search-input"
+                            placeholder="Search Genesis, Romans, Hebrews..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                    <div class="resource-filters"
+                         role="group"
+                         aria-label="Filter Bible teaching videos">
+
+                        <button
+                            type="button"
+                            class="resource-filter video-filter active"
+                            data-video-filter="all"
+                            aria-pressed="true">
+                            All Videos
+                        </button>
+
+                        <button
+                            type="button"
+                            class="resource-filter video-filter"
+                            data-video-filter="old"
+                            aria-pressed="false">
+                            Old Testament
+                        </button>
+
+                        <button
+                            type="button"
+                            class="resource-filter video-filter"
+                            data-video-filter="new"
+                            aria-pressed="false">
+                            New Testament
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESULTS HEADING -->
+                <div class="resource-results-heading">
+
+                    <h3 id="video-results-title">
+                        All Bible Teaching Videos
+                    </h3>
+
+                    <p id="video-count"
+                       role="status"
+                       aria-live="polite">
+                        Loading videos...
+                    </p>
+
+                </div>
+
+
+                <!-- VIDEO CARDS -->
+                <div
+                    class="video-library-grid"
+                    id="bible-video-grid">
+                </div>
+
+
+                <!-- NO RESULTS -->
+                <div
+                    class="resource-empty"
+                    id="video-empty"
+                    hidden>
+
+                    <h3>No Matching Videos</h3>
+
+                    <p>
+                        Try searching for another
+                        Bible book or selecting
+                        a different category.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             VIDEO PLAYER MODAL
+        ========================================== -->
+        <div
+            class="video-modal"
+            id="video-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="video-modal-title"
+            hidden>
+
+            <div class="video-modal-backdrop"
+                 data-close-video></div>
+
+            <div class="video-modal-content">
+
+                <div class="video-modal-header">
+
+                    <h2 id="video-modal-title">
+                        Bible Teaching Video
+                    </h2>
+
+                    <button
+                        type="button"
+                        class="video-modal-close"
+                        id="video-modal-close"
+                        aria-label="Close video">
+                        &times;
+                    </button>
+
+                </div>
+
+                <div class="video-player">
+
+                    <iframe
+                        id="video-player-frame"
+                        title="Bible Teaching Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <div class="video-modal-footer">
+
+                    <a
+                        id="video-youtube-link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Watch on YouTube ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             CONTINUE YOUR STUDY
+        ========================================== -->
+        <section class="section soft">
+
+            <div class="wrap">
+
+                <div class="resource-library-heading">
+
+                    <span class="eyebrow">
+                        Continue Your Study
+                    </span>
+
+                    <h2>More Ways to Grow in God's Word</h2>
+
+                    <p>
+                        Complement these teachings
+                        with our monthly Bible reading
+                        plans and written reference materials.
+                    </p>
+
+                </div>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <h3>Bible Reading Plan</h3>
+
+                        <p>
+                            Follow our twelve monthly
+                            Bible reading schedules.
+                        </p>
+
+                        <a href="./bible-reading-plan.html">
+                            View Reading Plans →
+                        </a>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>Bible Reference Materials</h3>
+
+                        <p>
+                            Explore Bible book introductions,
+                            articles, and study guides.
+                        </p>
+
+                        <a href="./bible-resources.html">
+                            View Reference Materials →
+                        </a>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>Worship With Us</h3>
+
+                        <p>
+                            Join us for Saturday worship
+                            and fellowship.
+                        </p>
+
+                        <a href="./services.html">
+                            Worship Details →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <div id="site-footer"></div>
+
+    <!-- SHARED JAVASCRIPT -->
+    <script src="./js/main.js" defer></script>
+
+</body>
+</html>
